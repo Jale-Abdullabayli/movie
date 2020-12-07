@@ -1,0 +1,25 @@
+<nav>
+    <div>
+        <img src="../../../assets/images/logo.PNG" class="mr-5" alt="logo">
+
+        <div class="links">
+            <a routerLink='/'>FİLM İZLE</a>
+            <a (click)="categoryFilter=!categoryFilter">TÜRLER <i class="fa fa-caret-down ml-2"
+                    aria-hidden="true"></i></a>
+            <a routerLink='/last-movies'>YENİ FİLMLER</a>
+            <a routerLink='/the-best-movies'>EN ÇOK BEĞENİLENLER</a>
+        </div>
+    </div>
+
+</nav>
+<div class="categoryFilter" *ngIf="categoryFilter">
+    <div class="filter">
+        <div class="row">
+            <div *ngFor="let category of categories" class="col-4">
+                <div (click)="categoryFilter=false" [routerLink]="['/home']" [queryParams]="{categoryId: category.id}" class="category">
+                    {{category.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,371 @@
+{
+    "movies": [{
+            "id": 1,
+            "name": "The Old Guard",
+            "director": [
+                "Gina Prince-Bythewood"
+            ],
+            "players": [
+                "Charlize Theron",
+                "KiKi Layne",
+                "Marwan Kenzari",
+                "Matthias Schoenaerts"
+            ],
+            "categoryId": [
+                3,
+                4
+            ],
+            "duration": 125,
+            "language": [
+                "td",
+                "ts"
+            ],
+            "year": 2020,
+            "productionId": 1,
+            "trailerUrl": "",
+            "tdUrl": "",
+            "tsUrl": "",
+            "description": "Kıdemli ve tecrübeli bir grup paralı asker zamanında devlet tarafından ölümsüz hale getirilmişlerdir ve bir çok mücadeleyi kazanmada önemli rol oynamışlardır. Zaman geçtikçe bu askerler ortadan kaybolur ve gizlilik içinde yaşayıp kimliklerini bir sır olarak tutmaya çalışırlar. Bir gün kimlikleri ortaya çıkar ve kendileri gibi yeni ve genç bir üye bulduklarında işler bir hayli karmaşık hale gelir ve sırlarını tekrardan koruyabilmek için savaşmak zorunda kalırlar. The Old Guard, Gina Prince-Bythewood'un yönettiği 2020 Amerikan yapımı süper kahraman, aksiyon ve fantastik türlerinde bir filmdir. Film aynı isimli çizgi romandan uyarlanarak yapılmıştır. Filmin başrolünde Charlize Theron, ekibin geri kalanında Matthias Schoenaerts, Marwan Kenzari, Chiwetel Ejiofor ve Van Veronica Ngo gibi bir çok farklı ve başarılı yapımda yer almış ödüllü ve yetenekli oyuncular yer almaktadır. Aksiyonun dur durak bilmediği ve herkesi içine sürükleyen senaryosuyla 2020'nin en çok beklenen filmleri arasında yer almaktadır.",
+            "imdb": 7.4,
+            "imgUrl": "https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-the-old-guard.jpg",
+            "addDate": "2020/10/27 16:39:00"
+        },
+        {
+            "id": 2,
+            "name": "Larva Adası Filmi",
+            "director": [
+                "Byoung-Wook Ahn"
+            ],
+            "players": [
+                "Eddy Lee",
+                "Hong Bum-ki",
+                "Kang Shi Hyun"
+            ],
+            "categoryId": [
+                2
+            ],
+            "duration": 89,
+            "language": [
+                "ts"
+            ],
+            "year": 2020,
+            "productionId": 2,
+            "trailerUrl": "",
+            "tdUrl": "",
+            "tsUrl": "",
+            "description": "Larva Adası Filmi, Byoung Wook Ahn’ın yönetmenliğini üstlendiği, Hong Bum-ki, Eddy Lee ve Kang Shi Hyun’un senaryoda beraber çalıştıkları ve imdb üzerinde bir animasyon filmine göre 5.0’lık bir puana sahip olan oldukça eğlenceli ve her yaştan herkesin keyifle izleyebileceği bir animasyon filmidir. Film 2018 yılındaki giriş filminden sonra ikinci bölüm olarak tasarlanmıştır. Filmdeki karakterlerin seslendirmelerini ise bizzat senarist ekibi üstlenmiştir. Bu eğlenceli ve komik animasyon filminde; Chuck bir bölüm öncesinde kaldığı noktadan yani Larva Adasından artık eve dönmüştür ve bir gazeteci ile ada hayatını ve orada yaşadığı maceraları konuşmaktadır. Orada gördüklerini, oradaki dostları Red ve Yellow’u ve nelere tanık olduğundan bahsetmektedir. Filmin serisinin ikincisi olarak ekranlardaki yerini alan animasyon filminde bu defa geçmişe flashback gidişler yaşanacak ve şimdiki zaman ile Chuck’ın adayı ne kadar özlediği anlatılacaktır.",
+            "imdb": 5,
+            "imgUrl": "https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-larva-adasi-filmi-the-larva-island-movie.jpg",
+            "addDate": "2020/10/27 16:45:00"
+        },
+        {
+            "id": 3,
+            "name": "Kin",
+            "director": [
+                "Jonathan Baker",
+                "Josh Baker"
+            ],
+            "players": [
+                "Dennis Quaid",
+                "Jack Reynor",
+                "Myles Truitt",
+                "Zoë Kravitz"
+            ],
+            "categoryId": [
+                5,
+                3,
+                6,
+                7,
+                8
+            ],
+            "duration": 102,
+            "language": [
+                "td",
+                "ts"
+            ],
+            "year": 2018,
+            "productionId": 1,
+            "trailerUrl": "",
+            "tdUrl": "",
+            "tsUrl": "",
+            "description": "Aksiyon, Bilim-Kurgu türünde çekilmiş olan Kin filmi 2018 yılında vizyona girmiş ve izleyicilerle buluşmuştur. ABD yapımı olan Kin filmi yönetmenleri Jonathan Baker, Josh Baker ve senaryo yazarları Jonathan Baker, Josh Baker, Daniel Casey olmuştur. Filmin Çekim Yeri Toronto, Ontario, Kanada olmuştur. İşledikleri suçlardan sonra hapis yatmış ve Kısa bir süre önce serbest bırakılmış  mahkum ve onun üvey kardeşi Eli ailesi ile birlikte şehrin en çok suç işlenen yerinde yaşamaktadırlar Eli’nin abisi suç lordundan sürekli borç almış ve bu borcu ödeyemediği için eski karanlık hayatına geri dönmüştür.Daha önceleri İntikam peşinde olan bir suçlu Eli’nin abisinin peşinde düşünce kardeşler kaçmak zorunda kalır. Bu sırada Eli bilmedikleri bir dünyadan gelen ve gizemli güçleri olan bir silah bulup onun nasıl kullanıldığını öğreneceklerdir. Kin 2018 1080p Film izle",
+            "imdb": 5.7,
+            "imgUrl": "https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-kin-11.jpg",
+            "addDate": "2020/10/27 16:51:00"
+        },
+        {
+            "id": 4,
+            "name": "Alacakaranlık 1 - Twilight",
+            "director": [
+                "Catherine Hardwicke"
+            ],
+            "players": [
+                "Billy Burke",
+                "Kristen Stewart",
+                "Matt Bushell",
+                "Robert Pattinson",
+                "Sarah Clarke"
+            ],
+            "categoryId": [
+                6,
+                4,
+                1
+            ],
+            "duration": 102,
+            "language": [
+                "td"
+            ],
+            "year": 2008,
+            "productionId": 1,
+            "trailerUrl": "",
+            "tdUrl": "",
+            "tsUrl": "",
+            "description": "Bella Swan 17 yaşında henüz liseye gitmekte olan bir kızdır, bir gün annesi ve babası evliliklerini bitirme kararı alırlar ve boşanırlar. Daha sonra annesi Renée başka birisiyle evlenir ve Bella babası Charlie'nin yanına, Washington'da küçük ve bol yağmurlu bir kasaba olan Forks'a taşınır. Bella akranlarının aksine farklı bir kızdır, daha doğrusu sıradan bir kız değildir, samimiyetsiz arkadaş gruplarıyla sahte ilişkiler kurmaya ve içli dışlı olmaya pek yanaşmaz.",
+            "imdb": 5.2,
+            "imgUrl": "https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-alacakaranlik-1-filmi-hd-izle-fullhd.jpg",
+            "addDate": "2020/10/27 17:02:00"
+        },
+        {
+            "id": 5,
+            "name": "Alacakaranlık 2 Efsanesi Yeni Ay",
+            "director": [
+                "Chris Weitz"
+            ],
+            "players": [
+                "Billy Burke",
+                "Kristen Stewart",
+                "Matt Bushell",
+                "Robert Pattinson"
+            ],
+            "categoryId": [
+                6,
+                9,
+                10,
+                1
+            ],
+            "duration": 130,
+            "language": [
+                "td"
+            ],
+            "year": 2009,
+            "productionId": 1,
+            "trailerUrl": "",
+            "tdUrl": "",
+            "tsUrl": "",
+            "description": "Az kalsın hayatının son bulmasına neden olacak vampir taarruzunun hemen ardından Bella, Edward'ın ailesiyle birlikte doğum gününü kutlamayı hem de bu bahaneyle yaşadığı şeyleri aklından silmeyi ve tamamen unutmayı hedefler.",
+            "imdb": 4.7,
+            "imgUrl": "https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-alacakaranlik-efsanesi-2-yeni-ay-filmi-hd-film-izle.jpg",
+            "addDate": "2020/10/27 17:04:00"
+        },
+        {
+            "id": 6,
+            "name": "Alacakaranlık 3 Efsanesi Tutulma",
+            "director": [
+                "David Slade"
+            ],
+            "players": [
+                "Taylor Lautner",
+                "Kristen Stewart",
+                "Xavier Samuel",
+                "Robert Pattinson"
+            ],
+            "categoryId": [
+                6,
+                9,
+                10,
+                1
+            ],
+            "duration": 124,
+            "language": [
+                "td"
+            ],
+            "year": 2010,
+            "productionId": 1,
+            "trailerUrl": "",
+            "tdUrl": "",
+            "tsUrl": "",
+            "description": "Bella, Seattle’da işlenen gizemli cinayetler ve intikam saldırısı düzenleyen vampirler arasından kendini yeniden tehlikenin kucağında bulur. Bu sırada Bella’dan Edward ya da Jacob arasında seçim yapması istenir. Belle için Edward hayatının aşkıdır ancak Jacob’da, Edward yokken onu yalnız bırakmayan ve onu çok iyi anlayan en iyi dostudur.",
+            "imdb": 5,
+            "imgUrl": "https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-alacakaranlik-efsanesi-tutulma-izleyin.jpg",
+            "addDate": "2020/10/30 01:22:00"
+        },
+        {
+            "id": 7,
+            "name": "Doktor Dolittle'in Yolculugu",
+            "director": [
+                "Stephen Gaghan"
+            ],
+            "players": [
+                "Antonio Banderas",
+                "Jim Broadbent",
+                "Michael Sheen",
+                "Robert Downey Jr"
+            ],
+            "categoryId": [
+                6,
+                7,
+                8
+            ],
+            "duration": 138,
+            "language": [
+                "td"
+            ],
+            "year": 2020,
+            "productionId": 1,
+            "trailerUrl": "",
+            "tdUrl": "",
+            "tsUrl": "",
+            "description": "Dr. Dolittle yetenekli bir hekimdir ve bir gün hayvanlarla konuşabildiğinin farkına varır. Karısının ölümünden sonra kendisini malikanesine kapatan doktor, Kraliçe'nin namını duyup özel bir isteği üzerine uzak ve keşfedilmemiş adalara doğru bir kaç hayvan dostuyla yola koyulmak zorunda kalır. Ailecek izlenebilecek olan Dolittle hayvanlarla konuşabilen ünlü doktorumuzun komik ve eğlenceli bir yolculuğa çıkmasını konu alır. Filmin başrolünü son dönemin en ünlü oyuncularından biri olan Robert Downey Jr'ın üstlenmesinin yanı sıra Antonio Banderas ve Michael Sheen gibi ünlü ve yetenekli aktörlerde yer almaktadır. Dolittle'ın hayvanlarının seslendirmeleri içinde Oscar ödüllü oyuncu Rami Malek, Tom Holland ve John Cena gibi son dönemin ünlü ve yetenekli oyuncuları yer almaktadır.",
+            "imdb": 9.5,
+            "imgUrl": "https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-doktor-dolittle-in-yolculugu-izle.jpg",
+            "addDate": "2020/11/04 19:54:00"
+        },
+        {
+            "id": 8,
+            "name": "The Devil All the Time",
+            "director": [
+                "Antonio Campos"
+            ],
+            "players": [
+                "Bill Skarsgård",
+                "Haley Bennett",
+                "Robert Pattinson",
+                "Tom Holland"
+            ],
+            "categoryId": [
+                4,
+                10
+            ],
+            "duration": 101,
+            "language": [
+                "td",
+                "ts"
+            ],
+            "year": 2020,
+            "productionId": 1,
+            "trailerUrl": "",
+            "tdUrl": "",
+            "tsUrl": "",
+            "description": "Ohio ve Batı Virginia’nın güney bölgesindeki kırsal bir kesimde geçen bu filmde, bir grup garip karakterin İkinci Dünya Savaşı’nın sonundan, 1960’lara kadar olan hikayesi anlatılıyor. İsmi Willard Russell olan bir adam, Güney Pasifik’ten problemli bir gazidir. Dualarını her ne kadar adak kanlarıyla taçlandırsa da, oldukça güzel olan ve çok sevdiği karısı Charlotte’u kanserin pençelerinden bir türlü kurtaramamıştır ve bunun yükü ona oldukça ağır gelmektedir. Bir seri katil takımı ve aynı zamanda da karı koca olan Carl ve Sandy Henderson adındaki ikili ise Amerika’nın otobanlarında fotoğrafını çekip, sonra da ortadan kaldıracakları modelleri aramaktadırlar. Vaazcı Roy ile, onun takım arkadaşı ve de aynı zamanda engelli bir gitarist olan Theodore ise yasadan kaçmaktadırlar. Ve bütün bu karmaşıklığın tam ortasında kendisini bulan Arvin Eugene Russell, yani Willard ve Charlotte’ın yetim oğulları, kendi kendine kalbi oldukça iyi ama aynı zamanda da şiddete meyilli bir adam olarak büyümüştür.",
+            "imdb": 9.5,
+            "imgUrl": "https://resim.fullhdfilmizlesene.com/mdsresim_izle/fullhd-the-devil-all-the-time.jpg",
+            "addDate": "2020/11/04 23:39:00"
+        }
+    ],
+    "categories": [{
+            "id": 1,
+            "name": "Romantik Filmler"
+        },
+        {
+            "id": 2,
+            "name": "Animasyon Filmleri"
+        },
+        {
+            "id": 3,
+            "name": "Aksiyon Filmleri"
+        },
+        {
+            "id": 4,
+            "name": "Fantastik Filmler"
+        },
+        {
+            "id": 5,
+            "name": "Bilim Kurgu Filmleri"
+        },
+        {
+            "id": 6,
+            "name": "Dram Filmleri"
+        },
+        {
+            "id": 7,
+            "name": "Gerilim Filmleri"
+        },
+        {
+            "id": 8,
+            "name": "Suç Filmleri"
+        },
+        {
+            "id": 9,
+            "name": "Gizem Filmleri"
+        },
+        {
+            "id": 10,
+            "name": "Macera Filmleri"
+        }
+    ],
+    "productions": [{
+            "id": 1,
+            "name": "ABD"
+        },
+        {
+            "id": 2,
+            "name": "Güney Kore"
+        }
+    ],
+    "series": [{
+        "id": 1,
+        "name": "Alacakaranlık",
+        "bookIds": [
+            4,
+            5,
+            6
+        ]
+    }],
+    "comments": [{
+            "id": 1,
+            "name": "Jale",
+            "surName": "Abdullabeyli",
+            "movieId": 1,
+            "comment": "This movie is awesome!!!",
+            "date": "2020/10/28 23:04:00"
+        },
+        {
+            "id": 2,
+            "name": "Anar",
+            "surName": "Abdullayev",
+            "movieId": 2,
+            "comment": "This is joyfull movie for you and your children :)",
+            "date": "2020/10/28 23:04:00"
+        },
+        {
+            "name": "elmira",
+            "surName": "axundova",
+            "movieId": 1,
+            "comment": "cok guzel bir film",
+            "date": "2020-10-30T11:10:40.981Z",
+            "id": 3
+        },
+        {
+            "name": "sema",
+            "surName": "mugumova",
+            "movieId": 7,
+            "comment": "ailecek izlene bilecek guzel bir film",
+            "date": "2020-11-04T19:56:03.300Z",
+            "id": 4
+        },
+        {
+            "name": "Ayla",
+            "surName": "Abdullayeva",
+            "movieId": 7,
+            "comment": "Birine yardim ederken aslinda kendinize yardim etmish olursunuz!!!",
+            "date": "2020-11-04T20:10:22.855Z",
+            "id": 5
+        },
+        {
+            "name": "ali",
+            "surName": "aliyev",
+            "movieId": 6,
+            "comment": "tum seriyi soluksuz izledimm",
+            "date": "2020-11-04T20:14:07.222Z",
+            "id": 6
+        },
+        {
+            "name": "seli",
+            "surName": "seyidova",
+            "movieId": 7,
+            "comment": ")))))",
+            "date": "2020-11-11T11:02:50.567Z",
+            "id": 8
+        }
+    ]
+}

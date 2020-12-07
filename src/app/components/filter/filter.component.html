@@ -1,0 +1,88 @@
+<div class="filter">
+    <div class="title">
+        <div class="row">
+            <div class="col-2 img">
+                <img src="../../../assets//images/favicons.png" alt="img">
+            </div>
+            <div class="col-10">
+                <h5>Film Robotu</h5>
+            </div>
+        </div>
+    </div>
+    <div class="bot">
+        <small>Seçeneklerin hepsini seçmenize gerek yoktur.</small>
+        <form>
+            <select class="form-control">
+                <option value="" >- Film Tarzi -</option>
+                <option value="">Turkce Dublaj </option>
+                <option value="">Turkce Altyazi</option>
+            </select>
+            <select class="form-control">
+                <option value="">- Film Turu -</option>
+                <option value="" *ngFor="let category of categories">{{category.name}}</option>
+            </select>
+            <select class="form-control">
+                <option value="">- Film Yili -</option>
+                <option value="">2020</option>
+                <option value="">2018</option>
+                <option value="">2008</option>
+                <option value="">2009</option>
+            </select>
+            <select class="form-control">
+                <option value="">- IMDB puani -</option>
+                <option value="">7 ve uzeri</option>
+                <option value="">6 ve uzeri</option>
+                <option value="">5 ve uzeri</option>
+                <option value="">4 ve uzeri</option>
+            </select>
+            <button type="submit" class="btn form-control">Filmleri Getir</button>
+            <button type="reset" class="btn form-control">Sifirla</button>
+        </form>
+    </div>
+
+</div>
+
+<div class="categoryFilter">
+    <div class="title">
+        <div class="row">
+            <div class="col-2 img">
+                <img src="../../../assets//images/favicons.png" alt="img">
+            </div>
+            <div class="col-10">
+                <h5>Film Türleri</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="categories container">
+        <div class="row">
+            <div class="col-6" *ngFor="let category of categories">
+                <button [routerLink]="['/home']" [queryParams]="{categoryId: category.id}" class="btn">-
+                    {{category.name}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="lastComments">
+    <div class="title">
+        <div class="row">
+            <div class="col-2 img">
+                <img src="../../../assets//images/favicons.png" alt="img">
+            </div>
+            <div class="col-10">
+                <h5>Son Yorumlanan Filmler</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments">
+        <div *ngFor="let comment of comments">
+            <b [routerLink]="['/watch-movie',comment.movieId]">{{movies[comment.movieId-1].name}}</b><br> <span>{{comment.comment}}</span> <br>
+            <small>{{comment.name}} {{comment.surName}}</small>
+            <hr>
+        </div>
+
+    </div>
+</div>

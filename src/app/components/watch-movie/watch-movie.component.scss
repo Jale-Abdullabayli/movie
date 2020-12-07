@@ -1,0 +1,224 @@
+@import '../../../styles.scss';
+.watch-movie {
+    padding: 20px;
+    background-color: #F3F8F9;
+    >.title {
+        position: relative;
+        h2 {
+            color: #586B79;
+        }
+        >span {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            color: white;
+            transform: translate(0, -50%);
+            border-radius: 5px;
+            padding: 5px 10px;
+            background-color: #DEAD1F;
+            .imdb {
+                color: darkblue;
+            }
+        }
+    }
+    .main {
+        .row {
+            margin: 0;
+        }
+        .leftSide {
+            padding: 0;
+            .img {
+                position: relative;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                span {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    color: white;
+                    background-color: rgba($color: #000000, $alpha: 0.7);
+                    padding: 5px 10px;
+                }
+            }
+            .btn {
+                background-color: #526975;
+                color: white;
+                width: 100%;
+            }
+        }
+        .properties {
+            padding: 0;
+            >div {
+                margin-left: 10px;
+            }
+            .description {
+                background-color: #EAF0F1;
+                max-height: 200px;
+                padding: 15px;
+                border-radius: 5px;
+                overflow-y: auto;
+                .name {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .watch {
+        .video {
+            .cinemaMod {
+                background-color: white;
+                padding: 10px;
+                overflow: auto;
+                border-radius: 10px;
+                >div {
+                    display: inline-block;
+                    .btn {
+                        background-color: white;
+                        color: #4E6673;
+                        border: 1px solid $borderColor;
+                    }
+                    .btn:nth-child(2) {
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                    .btn:nth-child(1) {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                    .lang {
+                        background-color: #4E6673;
+                        color: white;
+                    }
+                }
+                .btn {
+                    font-weight: bold;
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+        .series {
+            border: 1px solid $borderColor;
+            border-radius: 10px;
+            .title {
+                @include watch-title;
+            }
+            .others {
+                margin: 0;
+                padding: 20px;
+                >div {
+                    padding: 0 20px 0 0;
+                    .other {
+                        cursor: pointer;
+                        position: relative;
+                        &:hover {
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                background-image: linear-gradient(to top, rgba(black, 0.5), transparent);
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        img {
+                            width: 100%;
+                            height: auto;
+                            overflow: auto;
+                        }
+                        .year {
+                            position: absolute;
+                            right: 5px;
+                            top: 5px;
+                            background-color: #516672;
+                            color: white;
+                            padding: 5px;
+                            border-radius: 5px;
+                        }
+                        .name {
+                            position: absolute;
+                            bottom: 5px;
+                            left: 5px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .comments {
+            .title {
+                @include watch-title;
+            }
+            .addComment {
+                border-radius: 10px;
+                border: 1px solid $borderColor;
+                form {
+                    padding: 20px;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    .formRow {
+                        min-height: 100px;
+                    }
+                    textarea {
+                        min-height: 100%;
+                    }
+                    .btn {
+                        background-color: #526975;
+                        color: white;
+                        &:disabled {
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+            .allComments {
+                border-radius: 10px;
+                border: 1px solid $borderColor;
+                .comment {
+                    background-color: #fff;
+                    border-radius: 10px;
+                    padding: 20px;
+                    >div {
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        border: 1px solid $borderColor;
+                        &:hover {
+                            background-color: #F9F9F9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cinema-mod {
+    height: 100%;
+    position: fixed;
+    content: "";
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(black, 0.7), rgba(black, 0.7));
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    .video {
+        height: 80%;
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn {
+        color: white;
+        font-weight: bold;
+        background-color: #4E6673;
+        position: absolute;
+        bottom: -70px;
+        right: 10px;
+    }
+}

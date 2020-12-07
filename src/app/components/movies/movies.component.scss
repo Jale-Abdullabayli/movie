@@ -1,0 +1,103 @@
+@import '../../../styles.scss';
+.movies {
+    background-color: #F3F8F9;
+    border-radius: 10px;
+    padding: 10px 0;
+    >.row {
+        margin: 0;
+        >div {
+            padding: 5px;
+        }
+    }
+    .list {
+        border-radius: 10px;
+        border: 1px solid #AFBBC7;
+    }
+    .list {
+        .title {
+            @include title;
+        }
+        >.row {
+            margin: 0;
+            padding: 0 10px;
+            .movie {
+                margin-bottom: 25px;
+                position: relative;
+                height: 250px;
+                >.row {
+                    .img {
+                        padding: 0;
+                        position: relative;
+                        cursor: pointer;
+                        &:hover {
+                            filter: grayscale(30%);
+                        }
+                        img {
+                            height: 250px;
+                            width: 100%;
+                        }
+                        .lang {
+                            width: 130px;
+                            height: 130px;
+                            position: absolute;
+                            left: -5px;
+                            top: -5px;
+                            overflow: hidden;
+                            .content {
+                                font-weight: bold;
+                                text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+                                font-size: 14px;
+                                width: 170px;
+                                height: 30px;
+                                position: absolute;
+                                top: 30px;
+                                left: -40px;
+                                padding-top: 3px;
+                                background-color: green;
+                                text-align: center;
+                                transform: rotate(-45deg);
+                                &::before {
+                                    content: "";
+                                    background-color: black;
+                                    height: 3px;
+                                    width: 5px;
+                                    position: absolute;
+                                    left: 7px;
+                                    bottom: -3px;
+                                    transform: rotate(-45deg);
+                                }
+                                &::after {
+                                    content: "";
+                                    z-index: -2;
+                                    background-color: black;
+                                    height: 5px;
+                                    width: 7px;
+                                    position: absolute;
+                                    right: 6px;
+                                    bottom: -3px;
+                                    transform: rotate(45deg);
+                                    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%);
+                                }
+                            }
+                        }
+                    }
+                    .properties {
+                        position: relative;
+                        span {
+                            font-size: 14px;
+                            hr {
+                                margin: 0 auto;
+                            }
+                        }
+                        .btn {
+                            position: absolute;
+                            bottom: 5px;
+                            left: 10px;
+                            @include btn;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

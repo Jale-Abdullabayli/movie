@@ -1,0 +1,12 @@
+<div class="slider">
+    <div>
+        <div>
+            <div class="movie" *ngFor="let movie of movies">
+                <img [routerLink]="['/watch-movie',movie.id]" [src]="movie.imgUrl" alt="Photo">
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-movies>
+</app-movies>

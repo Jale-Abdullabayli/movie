@@ -1,0 +1,66 @@
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-color: #D7E5EA;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        >div {
+            position: absolute;
+            width: 95%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            >div {
+                width: 140%;
+                display: flex;
+                animation: slide 15s infinite;
+                @keyframes slide {
+                    0% {
+                        margin-left: 0;
+                    }
+                    10% {
+                        margin-left: 0;
+                    }
+                    25% {
+                        margin-left: -20%;
+                    }
+                    50% {
+                        margin-left: -40%;
+                    }
+                    75% {
+                        margin-left: -20%;
+                    }
+                    100% {
+                        margin-left: 0;
+                    }
+                }
+                .movie {
+                    img {
+                        width: 90%;
+                        height: auto;
+                        &:hover {
+                            filter: grayscale(30%);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        i {
+            background-color: white;
+            color: #3C4850;
+            padding: 10px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            &.fa-chevron-left {
+                left: 10px;
+            }
+            &.fa-chevron-right {
+                right: 10px;
+            }
+        }
+    }

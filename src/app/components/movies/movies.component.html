@@ -1,0 +1,57 @@
+<div class="movies">
+    <div class="row">
+        <div class="col-8">
+            <div class="list">
+                <div class="title">
+                    {{title}}
+                </div>
+                <div class="row mt-4">
+                    <div class="movie col-6" *ngFor="let movie of movies">
+                        <div class="row">
+                            <div class="col-6 img" [routerLink]="['/watch-movie',movie.id]">
+                                <img [src]="movie.imgUrl" class="float-left" alt="photo">
+                                <div class="lang">
+                                    <div *ngIf="movie.language.length==2" style="background-color: #3D9FE1" class="content">TR Dub/ALT</div>
+
+                                    <div *ngIf="movie.language.length==1 && movie.language[0]==['td']" class="content" style="background-color: #FED316;">
+                                        Türkçe Dublaj
+                                    </div>
+                                    <div *ngIf="movie.language[0]==['ts']" class="content" style="background-color: #B2B2B2;">
+                                        Tr Altyazı
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 properties">
+                                <h5>{{movie.name}}</h5>
+                                <span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    {{categories[movie.categoryId[0]-1].name}}
+                                    <hr></span>
+                                <span *ngIf="movie.language.length==2">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i> TR Dublaj / Altyazı
+                                    <hr></span>
+                                <span *ngIf="movie.language.length==1 && movie.language[0]==['td']">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i> Türkçe Dublaj
+                                    <hr></span>
+                                <span *ngIf="movie.language[0]==['ts']">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i> Türkçe Altyazılı
+                                    <hr></span>
+                                <span><i class="fa fa-angle-right" aria-hidden="true"></i> {{movie.year}} Filmleri
+                                    <hr></span>
+                                <span><i class="fa fa-angle-right" aria-hidden="true"></i> IMDB: {{movie.imdb}}
+                                    <hr></span>
+                                <span><i class="fa fa-angle-right" aria-hidden="true"></i> {{movie.addDate | date}}</span>
+                                <button class="btn" type="button" [routerLink]="['/watch-movie',movie.id]">Filmi
+                                    Izle</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="filter">
+                <app-filter></app-filter>
+            </div>
+        </div>
+    </div>
+</div>

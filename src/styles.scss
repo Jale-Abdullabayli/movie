@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+$primaryColor: #D9E8F1;
+$secondaryColor:#D8E3E7;
+$borderColor:#AFBBC7;
+@mixin btn {
+    background-color: $secondaryColor;
+    border-radius: 5px;
+    color: #344F5E;
+    font-weight: bold;
+}
+
+@mixin title {
+    border-bottom: 1px solid $borderColor;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: $primaryColor;
+    font-weight: bold;
+    color: #344F5E;
+    padding: 10px;
+}
+
+@mixin watch-title {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    background-color: $primaryColor;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 1px solid $borderColor;
+}
+
+@mixin filterTitle {
+    @include title;
+    .row {
+        margin: 0;
+    }
+    .img {
+        img {
+            display: block;
+            margin: 0 auto;
+            height: 20px;
+            width: 20px;
+        }
+        border-right: 1px solid #AFBBC7;
+    }
+    h5 {
+        display: inline;
+    }
+}
+
+body {
+    background-color: #283137;
+    overflow-x: hidden;
+    min-width: 1100px;
+}

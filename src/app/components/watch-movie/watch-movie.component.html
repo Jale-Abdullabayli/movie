@@ -1,0 +1,150 @@
+<div class="watch-movie">
+    <div class="title mb-4">
+        <h2 class="d-inline">{{movie.name}}</h2>
+        <span>IMDB <span class="imdb">{{movie.imdb}}</span></span>
+    </div>
+    <div class="main">
+        <div class="row">
+            <div class="col-3 leftSide">
+                <div class="img">
+                    <img [src]="movie.imgUrl" alt="photo">
+                    <span>{{comments.length}} yorum</span>
+                </div>
+                <button (click)="cinemaMod=!cinemaMod" class="btn mt-3" type="button">Fragmani izle</button>
+            </div>
+            <div class="col-9 properties">
+                <div>
+                    <div class="description">
+                        <span><span class="name">{{movie.name}}</span> {{movie.description}}</span>
+                    </div>
+                    <table class="table table-striped mt-2">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="th">> Yönetmen</th>
+                                <td>{{movie.director}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">> Oyuncular</th>
+                                <td><span *ngFor="let player of movie.players">{{player}} </span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">> Yapım</th>
+                                <td>{{movie.year}} Filmleri {{productions[movie.productionId-1].name}}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">> Tür</th>
+                                <td><span *ngFor="let categoryId of movie.categoryId">{{categories[categoryId-1].name}}
+                                    </span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">> Süre</th>
+                                <td>{{movie.duration}} dk</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">> Dil</th>
+                                <td> <span *ngIf="movie.language.length==2">Türkçe Dublaj / Türkçe Altyazılı</span>
+                                    <span *ngIf="movie.language.length==1 && movie.language[0]==['td']">Türkçe
+                                        Dublaj</span>
+                                    <span *ngIf="movie.language[0]==['ts']">Türkçe Altyazılı</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row watch mt-4">
+        <div class="col-9">
+
+            <!-- VIDEO -->
+            <div class="video">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="cinemaMod mt-4">
+                    <div *ngIf="movie.language.length==2">
+                        <button (click)="url=movie.language[0]" [class.lang]="url==movie.language[0]" class="btn">TR
+                            Dublaj</button>
+                        <button (click)="url=movie.language[1]" [class.lang]="url==movie.language[1]" class="btn">TR
+                            Altyazi</button>
+                    </div>
+                    <button (click)="cinemaMod=!cinemaMod" class="btn float-right"><i class="fa fa-arrows-alt" aria-hidden="true"></i> Sinema Modu</button>
+                </div>
+            </div>
+
+            <!-- SERIES -->
+            <div *ngIf="series" class="series mt-4">
+                <div class="title">{{series.name}}- Diğer Filmleri</div>
+                <div class="row others">
+                    <div class="col-3 mb-3" *ngFor="let other of seriesOthers">
+                        <div class="other" [routerLink]="['/watch-movie',other.id]">
+                            <img [src]="other.imgUrl" alt="photo">
+                            <span class="year">{{other.year}}</span>
+                            <span class="name">{{other.name}}</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMENTS -->
+            <div class="comments mt-4">
+                <div class="addComment">
+                    <div class="title">
+                        Filme Yorum Yaz
+                    </div>
+                    <form [formGroup]="CommentForm" (ngSubmit)="onSubmit()">
+                        <div class="row formRow">
+                            <div class="col-4">
+                                <input [class.is-invalid]="CommentForm.get('name').invalid && CommentForm.get('name').touched" type="text" formControlName='name' class="form-control" placeholder="Adiniz" name="name">
+                                <small class="text-danger" *ngIf="CommentForm.get('name').invalid && CommentForm.get('name').touched">This
+                                    field must be filled</small>
+
+                                <input [class.is-invalid]="CommentForm.get('surName').invalid && CommentForm.get('surName').touched" type="text" formControlName='surName' name="surName" class="form-control mt-3" placeholder="Soy Adiniz">
+                                <small class="text-danger" *ngIf="CommentForm.get('surName').invalid && CommentForm.get('surName').touched">This
+                                    field must be filled</small>
+
+                            </div>
+                            <div class="col-8">
+                                <textarea [class.is-invalid]="CommentForm.get('comment').invalid && CommentForm.get('comment').touched" formControlName='comment' name="comment" class="form-control" name="comment" id="comment" placeholder="Yorumunuz" cols="30"></textarea>
+                                <div *ngIf="CommentForm.get('comment').invalid && CommentForm.get('comment').touched">
+                                    <small class="text-danger" *ngIf="CommentForm.get('comment').errors?.required">This
+                                        field must be filled</small>
+                                    <small class="text-danger" *ngIf="CommentForm.get('comment').errors?.minlength">This
+                                        field must be at least 5 character</small>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3"> <button [disabled]="CommentForm.invalid" type="submit" class="btn ml-auto d-block">Gonder</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="allComments mt-4 mb-4">
+                    <div class="title">
+                        Film Hakkındaki Yorumlar
+                    </div>
+                    <div class="comment">
+                        <div *ngFor="let comment of comments">
+                            <div class="mb-2">
+                                <h5 class="d-inline">{{comment.name}} {{comment.surName}}</h5>
+                                <span class="float-right">{{comment.date | date}}</span>
+                            </div>
+                            <span>{{comment.comment}}</span>
+                        </div>
+                        <h6 *ngIf="comments.length==0">Henuz bir yorum yapilmamis</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cinema-mod" *ngIf="cinemaMod">
+    <div class="video">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        </div>
+        <button (click)="cinemaMod=false" class="btn float-right"><i class="fa fa-arrows-alt" aria-hidden="true"></i> Sinema Kapat</button>
+    </div>
+</div>
