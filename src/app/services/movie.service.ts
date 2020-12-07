@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Movie } from '../models/movie';
+import {environment} from '../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class MovieService {
 
-url:string="http://localhost:3000/movies";
+url:string=`${environment.baseUrl}/movies`;
+
 
   constructor(private http:HttpClient) { }
 
