@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl:"https://golden-52327.firebaseio.com"
+  baseUrl:"http://localhost:3000"
 };
 
 /*
